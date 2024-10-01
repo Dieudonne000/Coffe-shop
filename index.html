@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #6b4226;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav {
+            background-color: #4e342e;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            background-color: #8d6e63;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        #home {
+            background-image: url(./Minimalist_Modern_Coffee_Shop_1_1100x.webp);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        #about {
+            background-color: #fff;
+        }
+
+        #about h2, #menu h2, #contact h2 {
+            font-size: 2rem;
+            color: #6b4226;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        #menu {
+            background-color: #f0e4d7;
+        }
+
+        .menu-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5rem;
+            color: #6b4226;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            color: #333;
+        }
+
+        #contact {
+            background-color: #6b4226;
+            color: white;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        #contact button {
+            background-color: #8d6e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #4e342e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Coffee Haven</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Coffee Haven</h2>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        At Coffee Haven, we are passionate about creating the best coffee experience for our customers. 
+        Whether you're here for a quick espresso or to relax with a latte, we offer the highest quality ingredients and a warm, inviting atmosphere. 
+        Sit back and enjoy!
+    </p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>A strong, full-bodied shot of coffee for the perfect kick.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="./Partners-Cappuccino-FT-BLOG0523-d2eed8fcd48d464282176339908662f7.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Rich espresso topped with frothy steamed milk.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="./Caffe_Latte_at_Pulse_Cafe.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>Smooth espresso with silky steamed milk and a touch of foam.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Coffee Haven | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
